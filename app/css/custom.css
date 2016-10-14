@@ -1,10 +1,30 @@
 /*
 Static file for Theme changes
-Theme name: My SPA Theme
+Theme name: ADI - Farmers Mutual Hail
 Version: 1.0
-Template: Howdy
+Template: Base
+Created: 10/14/16
+Last Updated: 10/14/16
+Authors: Coverdale Group
 */
 
+
+.btn-advertising {
+
+    background-color: #41b0d9;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-advertising:hover {
+
+    background-color: #1396C7;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/******************/
 
 #content {
     border-bottom:20px solid #636467;
