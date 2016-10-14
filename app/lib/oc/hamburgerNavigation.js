@@ -4,8 +4,8 @@ angular.module('OrderCloud-HamburgerNavigation')
     .directive('hamburgernavigation', hamburgernavigation)
     .directive('hamburgernavcategorytree', hamburgernavcategorytree)
     .directive('hamburgernavnode', hamburgernavnode)
-    .directive('categorytree', categorytree)
-    .directive('node', node)
+    //directive('categorytree', categorytree)
+    //.directive('node', node)
     .controller('HamburgerNavigationCtrl', HamburgerNavigationCtrl)
 ;
 

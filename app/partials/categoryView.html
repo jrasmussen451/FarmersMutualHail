@@ -1,23 +1,18 @@
 <section>
     <nav id="451qa_nav_hdr" class="nav">
-
-        <ul>
-            <!--<li class="hidden-sm hidden-xs">
+        <breadcrumbs></breadcrumbs>
+        <!--<ul>
+            <li class="hidden-sm hidden-xs">
                 <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
-                &lt;!&ndash;<span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.hidden }"></i></span> &ndash;&gt;
             </li>
             <li>
-                <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
-            </li>-->
-            <li>
-                <breadcrumbs></breadcrumbs>
+                <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name"></span>
             </li>
-
-        </ul>
+        </ul>-->
     </nav>
 
-    <div class="row" ng-init="navStatus.visible = false">
-        <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
+    <div class="row">
+        <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible && !isActive('catalog')">
             <div class="panel panel-default panel-nav">
 
                 <nav class="nav 451qa_sidenav panel-body">
@@ -25,11 +20,10 @@
                         <categorycollapse tree='tree' current='currentCategory'></categorycollapse>
                     </ul>
                 </nav>
-                <!--
-                <homemessage /> -->
+                <!--<homemessage />-->
             </div>
         </aside>
-        <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }" >
+        <div class="col-md-9">
 
             <categorylistview></categorylistview>
 
