@@ -7,9 +7,11 @@
             <div class="empty" ng-hide="LineItem.Variant.SmallImageUrl || LineItem.Product.SmallImageUrl">
                 <span class="fa empty"><i class="fa fa-camera"></i></span>
             </div>
+
             <div class="btn btn-default">
                 {{('View' | r) + ' ' + ('Product' | r) | xlat}}
             </div>
+
         </a>
     </div>
     <div class="col-sm-8 text-left">
@@ -47,9 +49,11 @@
             <p ng-show="inventoryDisplay(LineItem.Product, LineItem.Variant)">
                 {{'Quantity Available' | r | xlat}}: {{inventoryDisplay(LineItem.Product, LineItem.Variant) }}
             </p>
+            <!--
             <button class="btn btn-default" redirect="product/{{LineItem.Product.InteropID}}">
                 {{('View' | r) + ' ' + ('Product' | r) | xlat}}
             </button>
+            -->
         </div>
     </section>
 </div>
